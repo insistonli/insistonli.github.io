@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-18T15:24:40.159Z</updated>
+  <updated>2020-05-18T07:23:57.927Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>原型和原型链</title>
+    <link href="http://yoursite.com/2020/05/18/%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+    <id>http://yoursite.com/2020/05/18/%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
+    <published>2020-05-18T07:19:37.000Z</published>
+    <updated>2020-05-18T07:23:57.927Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h2><ul><li>所有对象都是通过<code>new 函数</code>创建</li><li>所有的函数也是对象<ul><li>函数中可以有属性</li></ul></li><li>所有对象都是引用类型</li></ul><h2 id="原型-prototype"><a href="#原型-prototype" class="headerlink" title="原型 prototype"></a>原型 prototype</h2><p>所有函数都有一个属性：prototype，称之为函数原型</p><p>默认情况下，prototype是一个普通的Object对象</p><p>默认情况下，prototype中有一个属性，constructor，它也是一个对象，它指向构造函数本身。</p><h2 id="隐式原型-proto"><a href="#隐式原型-proto" class="headerlink" title="隐式原型 proto"></a>隐式原型 <strong>proto</strong></h2><p>所有的对象都有一个属性：<code>__proto__</code>，称之为隐式原型</p><p>默认情况下，隐式原型指向创建该对象的函数的原型。</p><p>当访问一个对象的成员时：</p><ol><li><p>看该对象自身是否拥有该成员，如果有直接使用</p></li><li><p>在原型链中依次查找是否拥有该成员，如果有直接使用</p></li></ol><p>猴子补丁：在函数原型中加入成员，以增强起对象的功能，猴子补丁会导致原型污染，使用需谨慎。</p><h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>特殊点：</p><ol><li>Function的<strong>proto</strong>指向自身的prototype</li><li>Object的prototype的<strong>proto</strong>指向null</li></ol><h2 id="链条的全貌"><a href="#链条的全貌" class="headerlink" title="链条的全貌"></a>链条的全貌</h2><h2 id="原型和原型链-1"><a href="#原型和原型链-1" class="headerlink" title="原型和原型链"></a>原型和原型链</h2><ul><li><p>所有对象都是通过<code>new 函数</code>创建</p></li><li><p>所有的函数也是对象</p><ul><li>函数中可以有属性</li></ul></li><li><p>所有对象都是引用类型</p></li></ul><h2 id="原型-prototype-1"><a href="#原型-prototype-1" class="headerlink" title="原型 prototype"></a>原型 prototype</h2><p>所有函数都有一个属性：prototype，称之为函数原型</p><p>默认情况下，prototype是一个普通的Object对象</p><p>默认情况下，prototype中有一个属性，constructor，它也是一个对象，它指向构造函数本身。</p><h2 id="隐式原型-proto-1"><a href="#隐式原型-proto-1" class="headerlink" title="隐式原型 proto"></a>隐式原型 <strong>proto</strong></h2><p>所有的对象都有一个属性：<code>__proto__</code>，称之为隐式原型</p><p>默认情况下，隐式原型指向创建该对象的函数的原型。</p><p>当访问一个对象的成员时：</p><ol><li><p>看该对象自身是否拥有该成员，如果有直接使用</p></li><li><p>在原型链中依次查找是否拥有该成员，如果有直接使用</p></li></ol><p>猴子补丁：在函数原型中加入成员，以增强起对象的功能，猴子补丁会导致原型污染，使用需谨慎。</p><h2 id="原型链-1"><a href="#原型链-1" class="headerlink" title="原型链"></a>原型链</h2><p>特殊点：</p><ol><li>Function的<strong>proto</strong>指向自身的prototype</li><li>Object的prototype的<strong>proto</strong>指向null</li></ol><h2 id="链条的全貌-1"><a href="#链条的全貌-1" class="headerlink" title="链条的全貌"></a>链条的全貌</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB194060970a726f4950296872423001af?method=download&shareKey=51be5efc6fe0a0fe1205fd4d58680393" alt="image"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;原型和原型链&quot;&gt;&lt;a href=&quot;#原型和原型链&quot; class=&quot;headerlink&quot; title=&quot;原型和原型链&quot;&gt;&lt;/a&gt;原型和原型链&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;所有对象都是通过&lt;code&gt;new 函数&lt;/code&gt;创建&lt;/li&gt;
+&lt;li&gt;所有的函数也是对象
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue</title>
